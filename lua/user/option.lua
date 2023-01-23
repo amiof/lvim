@@ -1,11 +1,12 @@
-vim.opt.hlsearch = false
+vim.opt.hlsearch = true
 vim.opt.mouse = "a"
 vim.opt.number = true -- set numbered lines
 vim.opt.relativenumber = true -- set relative numbered lines
 vim.opt.scrolloff = 8 -- is one of my fav
 vim.opt.sidescrolloff = 8
 vim.opt.wrap = false -- display lines as one long line
-vim.opt.cursorline = false -- highlight the current line
+vim.opt.cursorline = true -- highlight the current line
+vim.opt.cursorcolumn = true
 vim.opt.undofile = true -- enable persistent undo
 vim.opt.splitbelow = true -- force all horizontal splits to go below current window
 vim.opt.splitright = true -- force all vertical splits to go to the right of current window

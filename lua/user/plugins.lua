@@ -7,6 +7,16 @@ lvim.plugins = {
   { 'echasnovski/mini.move' },
   { "lvimuser/lsp-inlayhints.nvim" },
   { "mxsdev/nvim-dap-vscode-js" },
+  { 'ayu-theme/ayu-vim' },
+  { "folke/zen-mode.nvim" },
+  { "terryma/vim-multiple-cursors" },
+  { 'Exafunction/codeium.vim',
+    config = function()
+      -- Change '<C-g>' here to any keycode you like.
+      vim.keymap.set('i', '<C-g>', function()
+        return vim.fn['codeium#Accept']()
+      end, { expr = true })
+    end },
   {
     "jose-elias-alvarez/typescript.nvim"
   },
