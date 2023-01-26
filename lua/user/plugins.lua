@@ -10,6 +10,11 @@ lvim.plugins = {
   { 'ayu-theme/ayu-vim' },
   { "folke/zen-mode.nvim" },
   { "terryma/vim-multiple-cursors" },
+  { 'rcarriga/nvim-notify' },
+  { "MunifTanjim/nui.nvim" },
+  { "folke/noice.nvim" },
+  { "karb94/neoscroll.nvim",
+    event = "WinScrolled", },
   { 'Exafunction/codeium.vim',
     config = function()
       -- Change '<C-g>' here to any keycode you like.
@@ -82,4 +87,5 @@ lvim.plugins = {
     "roobert/tailwindcss-colorizer-cmp.nvim",
     -- optionally, override the default options:
   },
+  -- 'lewis6991/gitsigns.nvim',
 }
