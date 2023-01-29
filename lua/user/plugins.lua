@@ -14,6 +14,7 @@ lvim.plugins = {
   { "MunifTanjim/nui.nvim" },
   { "folke/noice.nvim" },
   { "karb94/neoscroll.nvim",
+    { "catppuccin/nvim", as = "catppuccin" },
     event = "WinScrolled", },
   { 'Exafunction/codeium.vim',
     config = function()

@@ -1,3 +1,10 @@
+lvim.builtin.global_statusline = false -- set true to use global statusline
+lvim.builtin.fancy_statusline = { active = true } -- enable/disable fancy statusline
+if lvim.builtin.fancy_statusline.active then
+  require("user.lualine").config()
+end
+local baner = require("user.banner").dashboard()
+lvim.builtin.alpha.dashboard.section.header.val = baner
 reload "user.noice"
 reload "user.auto-save"
 reload "user.goto-preview"
@@ -31,3 +38,4 @@ reload "user.status"
 -- reload "user.notify"
 reload "user.neoscroll"
 reload "user.colorschema"
+reload "user.dashboard"
