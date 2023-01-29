@@ -5,6 +5,8 @@ if lvim.builtin.fancy_statusline.active then
 end
 local baner = require("user.banner").dashboard()
 lvim.builtin.alpha.dashboard.section.header.val = baner
+lvim.lsp.diagnostics.virtual_text = false --for show errors in line or not
+lvim.builtin.smooth_scroll = "neoscroll" -- for smoth scrolling, can be "cinnamon", "neoscroll" or ""
 reload "user.noice"
 reload "user.auto-save"
 reload "user.goto-preview"

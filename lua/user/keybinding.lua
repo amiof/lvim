@@ -10,3 +10,8 @@ vim.keymap.set("n", "Tn", ":tabnew<cr>", { silent = true })
 vim.keymap.set("n", "Tz", ":tabnew %<cr>", { silent = true })
 vim.keymap.set("n", "To", ":tabclose<cr>", { silent = true })
 vim.cmd("nnoremap Q <c-v>")
+----bindding neoscroll to pageup and ScrollWheelUp ....
+vim.cmd(":map <ScrollWheelUp> <C-u>")
+vim.cmd(":map <ScrollWheelDown> <C-d>")
+vim.cmd(":map <PageDown> <C-d>")
+vim.cmd(":map <PageUp> <C-u>")
