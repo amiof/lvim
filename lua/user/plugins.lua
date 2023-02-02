@@ -7,21 +7,12 @@ lvim.plugins = {
   { 'echasnovski/mini.move' },
   { "lvimuser/lsp-inlayhints.nvim" },
   { "mxsdev/nvim-dap-vscode-js" },
-  { "kevinhwang91/promise-async" },
   {
     "kevinhwang91/nvim-ufo",
     requires = {
       "kevinhwang91/promise-async",
       {
         "luukvbaal/statuscol.nvim",
-        config = function()
-          require("statuscol").setup(
-            {
-              foldfunc = "builtin",
-              setopt = true
-            }
-          )
-        end
       }
     }
   },

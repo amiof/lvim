@@ -1,8 +1,14 @@
-local ftMap = {
-  vim = 'indent',
-  python = { 'indent' },
-  git = ''
-}
+-- local ftMap = {
+--   vim = 'indent',
+--   python = { 'indent' },
+--   git = ''
+-- }
+-- require("statuscol").setup(
+--   {
+--     foldfunc = "builtin",
+--     setopt = true
+--   })
+
 require('ufo').setup({
   open_fold_hl_timeout = 150,
   close_fold_kinds = { 'imports', 'comment' },
@@ -91,11 +97,9 @@ require('ufo').setFoldVirtTextHandler(bufnr, handler)
 
 
 
-
-
 ----folding for ufo config
---vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
-vim.o.foldcolumn = "5" -- '0' is not bad
+--vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep:|,foldclose:]]
+vim.o.foldcolumn = "0" -- '0' is not bad
 vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
@@ -103,7 +107,7 @@ vim.o.foldenable = true
 --vim.o.statuscolumn = '%=%l%s%{foldlevel(v:lnum) > foldlevel(v:lnum - 1) ? (foldclosed(v:lnum) == -1 ? "▼" : "⏵") : " " }'
 --vim.o.statuscolumn = '%=%l%s%{foldlevel(v:lnum) > 0 ? (foldlevel(v:lnum) > foldlevel(v:lnum - 1) ? (foldclosed(v:lnum) == -1 ? "-" : "+") : "│") : " " }'
 --vim.o.statuscolumn = '%=%l%s%#FoldColumn#%{foldlevel(v:lnum) > foldlevel(v:lnum - 1) ? (foldclosed(v:lnum) == -1 ? "▼" : "⏵") : " " }%*'
-vim.o.statuscolumn = '%=%l%s%#FoldColumn#%{foldlevel(v:lnum) > foldlevel(v:lnum - 1) ? (foldclosed(v:lnum) == -1 ? "" : "") : "  " }%*'
+--vim.o.statuscolumn = '%=%l%s%#FoldColumn#%{foldlevel(v:lnum) > foldlevel(v:lnum - 1) ? (foldclosed(v:lnum) == -1 ? "" : "") : "  " }%*'
 --
 -- vim.o.statuscolumn = '%= '
 --     .. '%s' -- sign column FIXME: figure out how to put on the other side without having to do a lot of shifting
@@ -131,6 +135,3 @@ vim.o.statuscolumn = '%=%l%s%#FoldColumn#%{foldlevel(v:lnum) > foldlevel(v:lnum 
 --     .. ': " "' -- blank for no fold, or inside fold
 --     .. '}'
 --     .. '%= ' -- spacing between end of column and start of text
---
---
-vim.cmd("hi statusline guibg=NONE gui=NONE")

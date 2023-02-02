@@ -1,5 +1,6 @@
 lvim.builtin.global_statusline = false -- set true to use global statusline
 lvim.builtin.fancy_statusline = { active = true } -- enable/disable fancy statusline
+require("user.indent-blankline").config()
 if lvim.builtin.fancy_statusline.active then
   require("user.lualine").config()
 end
@@ -43,3 +44,4 @@ reload "user.colorschema"
 reload "user.dashboard"
 reload "user.ufo"
 reload "user.transparent"
+--reload "user.indent-blankline"
