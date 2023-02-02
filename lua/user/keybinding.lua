@@ -2,6 +2,7 @@ lvim.leader = "space"
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 vim.keymap.set("i", "jj", "<esc>", { noremap = true })
 vim.keymap.set("i", "jk", "<esc>", { noremap = true })
+vim.keymap.set("i", "kk", "<esc>", { noremap = true })
 vim.keymap.set("n", "m", ":BufferLineCycleNex<cr>", { silent = true })
 vim.keymap.set("n", "M", ":BufferLineCyclePrev<cr>", { silent = true })
 vim.keymap.set("n", "\\", ":vsplit<cr>", { silent = true })
@@ -10,6 +11,7 @@ vim.keymap.set("n", "Tn", ":tabnew<cr>", { silent = true })
 vim.keymap.set("n", "Tz", ":tabnew %<cr>", { silent = true })
 vim.keymap.set("n", "To", ":tabclose<cr>", { silent = true })
 vim.cmd("nnoremap Q <c-v>")
+vim.keymap.set("n", "@", ":ZenMode<cr>", { silent = true })
 ----bindding neoscroll to pageup and ScrollWheelUp ....
 vim.cmd(":map <ScrollWheelUp> <C-u>")
 vim.cmd(":map <ScrollWheelDown> <C-d>")
