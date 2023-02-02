@@ -182,7 +182,7 @@ M.catppuccin = function()
       },
       indent_blankline = {
         enabled = true,
-        colored_indent_levels = false,
+        colored_indent_levels = true,
       },
       gitsigns = lvim.builtin.gitsigns.active,
       notify = lvim.builtin.noice.active,
@@ -447,6 +447,7 @@ M.telescope_theme = function(colorset)
     vim.cmd("hi " .. group .. " guifg=" .. fg .. " guibg=" .. bg)
   end
 
+  --#9ca0a4
   set_fg_bg("SpecialComment", "#9ca0a4", "bold")
   link("FocusedSymbol", "LspHighlight")
   link("LspCodeLens", "SpecialComment")
@@ -454,7 +455,7 @@ M.telescope_theme = function(colorset)
   link("LspDiagnosticsSignHint", "DiagnosticHint")
   link("LspDiagnosticsSignInfo", "DiagnosticInfo")
   link("NeoTreeDirectoryIcon", "NvimTreeFolderIcon")
-  link("IndentBlanklineIndent1 ", "@comment")
+  -- link("IndentBlanklineIndent1 ", "@comment")
 
   -- NOTE: these are my personal preferences
   if lvim.builtin.time_based_themes then
