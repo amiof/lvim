@@ -1,6 +1,6 @@
 require("document-color").setup {
   -- Default options
-  mode = "single", -- "background" | "foreground" | "single"
+  mode = "background", -- "background" | "foreground" | "single"
 }
 
 
@@ -25,6 +25,3 @@ require("lspconfig").tailwindcss.setup({
   on_attach = on_attach,
   capabilities = capabilities
 })
-lvim.builtin.cmp.formatting = {
-  format = require("tailwindcss-colorizer-cmp").formatter
-}

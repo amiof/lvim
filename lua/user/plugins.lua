@@ -97,5 +97,10 @@ lvim.plugins = {
     "roobert/tailwindcss-colorizer-cmp.nvim",
     -- optionally, override the default options:
   },
+  -- {
+  --   "ryoppippi/tailwindcss-colorizer-cmp.nvim"
+  --   --it is fork form down
+  -- },
+
   -- 'lewis6991/gitsigns.nvim',
 }
