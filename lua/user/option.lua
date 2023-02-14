@@ -16,6 +16,7 @@ vim.opt.hidden = true -- required to keep multiple buffers and open multiple buf
 vim.opt.showmode = true -- we don't need to see things like -- INSERT -- anymore
 vim.opt.termbidi = true
 vim.opt.termguicolors = true
+
 --vim.opt.foldmethod = "expr" -- folding set to "expr" for treesitter based folding
 --vim.opt.foldexpr = "nvim_treesitter#foldexpr()" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
 --vim.opt.foldlevel = 1
@@ -55,7 +56,7 @@ vim.opt.colorcolumn = "99999" -- fixes indentline for now
 -- vim.opt.updatetime = 300 -- faster completion
 -- vim.opt.writebackup = false -- if a file is being edited by another program (or was written to file while editing with another program) it is not allowed to be edited
 -- vim.opt.expandtab = true -- convert tabs to spaces
--- vim.opt.shiftwidth = 2 -- the number of spaces inserted for each indentation
+vim.opt.shiftwidth = 4 -- the number of spaces inserted for each indentation
 -- vim.opt.tabstop = 2 -- insert 2 spaces for a tab
 -- vim.opt.cursorline = true -- highlight the current line
 -- vim.opt.number = true -- set numbered lines
