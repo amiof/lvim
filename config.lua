@@ -2,7 +2,7 @@ lvim.builtin.global_statusline = false -- set true to use global statusline
 lvim.builtin.fancy_statusline = { active = true } -- enable/disable fancy statusline
 require("user.indent-blankline").config()
 if lvim.builtin.fancy_statusline.active then
-  require("user.lualine").config()
+    require("user.lualine").config()
 end
 local baner = require("user.banner").dashboard()
 lvim.builtin.alpha.dashboard.section.header.val = baner
@@ -45,3 +45,4 @@ reload "user.dashboard"
 reload "user.ufo"
 reload "user.transparent"
 --reload "user.indent-blankline"
+reload "user.selectEase"
