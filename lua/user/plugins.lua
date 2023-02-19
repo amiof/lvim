@@ -1,6 +1,8 @@
 lvim.plugins = {
     { "olimorris/onedarkpro.nvim" },
     { "NLKNguyen/papercolor-theme" },
+    { "Wansmer/treesj" },
+    { "manzeloth/live-server" },
     { "luisiacc/gruvbox-baby" },
     { "ziontee113/SelectEase" }, --select easy item and change it
     { "xiyaowong/nvim-transparent" },
