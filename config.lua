@@ -1,4 +1,4 @@
-lvim.builtin.global_statusline = false -- set true to use global statusline
+lvim.builtin.global_statusline = false            -- set true to use global statusline
 lvim.builtin.fancy_statusline = { active = true } -- enable/disable fancy statusline
 require("user.indent-blankline").config()
 if lvim.builtin.fancy_statusline.active then
@@ -6,7 +6,7 @@ if lvim.builtin.fancy_statusline.active then
 end
 local baner = require("user.banner").dashboard()
 lvim.builtin.alpha.dashboard.section.header.val = baner
---lvim.lsp.diagnostics.virtual_text = false --for show errors in line or not
+-- lvim.lsp.diagnostics.virtual_text = false --for show errors in line or not
 lvim.builtin.smooth_scroll = "neoscroll" -- for smoth scrolling, can be "cinnamon", "neoscroll" or ""
 lvim.lsp.code_lens_refresh = true
 reload "user.noice"
@@ -47,3 +47,8 @@ reload "user.transparent"
 --reload "user.indent-blankline"
 reload "user.selectEase"
 reload "user.treesj"
+-- reload "user.anyline"
+reload "user.cellularAutomation"
+-- reload "user.terminal"
+reload "user.mini-sourround"
+reload "user.cmp"
