@@ -6,4 +6,4 @@ lvim.format_on_save = true
 lvim.colorscheme = 'lunar'
 --
 -- lvim.colorscheme = 'onedark'
-lvim.builtin.lualine.options.theme = "catppuccin"
+lvim.builtin.lualine.options.theme = "lunar"

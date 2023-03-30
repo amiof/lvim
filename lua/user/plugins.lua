@@ -1,13 +1,18 @@
 lvim.plugins = {
     { "olimorris/onedarkpro.nvim" },
     { "NLKNguyen/papercolor-theme" },
+    { "NNNiv/monokai-palenight.nvim" },
+    -- { "huy-hng/anyline.nvim" },
     { "Wansmer/treesj" },
     { "manzeloth/live-server" },
+    { "eandrju/cellular-automaton.nvim" },
     { "luisiacc/gruvbox-baby" },
+    { 'uarun/vim-protobuf' },
     { "ziontee113/SelectEase" }, --select easy item and change it
     { "xiyaowong/nvim-transparent" },
     { "pangloss/vim-javascript" },
     { 'echasnovski/mini.move' },
+    { 'echasnovski/mini.surround' },
     { "lvimuser/lsp-inlayhints.nvim" },
     { "mxsdev/nvim-dap-vscode-js" },
     {
@@ -21,20 +26,47 @@ lvim.plugins = {
     },
     { 'ayu-theme/ayu-vim' },
     { "folke/zen-mode.nvim" },
+    {
+        'phaazon/mind.nvim',
+        branch = 'v2.2',
+        requires = { 'nvim-lua/plenary.nvim' },
+        config = function()
+            require 'mind'.setup()
+        end
+    },
     { "terryma/vim-multiple-cursors" },
     { 'rcarriga/nvim-notify' },
     { "MunifTanjim/nui.nvim" },
-    { "folke/noice.nvim" },
-    { "karb94/neoscroll.nvim",
+    {
+        "folke/noice.nvim",
+        config = function()
+            require("noice").setup({
+                -- add any options here
+            })
+        end,
+        requires = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            "rcarriga/nvim-notify",
+        }
+    },
+    {
+        "karb94/neoscroll.nvim",
         { "catppuccin/nvim", as = "catppuccin" },
-        event = "WinScrolled", },
-    { 'Exafunction/codeium.vim',
+        event = "WinScrolled",
+    },
+    {
+        'Exafunction/codeium.vim',
         config = function()
             -- Change '<C-g>' here to any keycode you like.
             vim.keymap.set('i', '<C-g>', function()
                 return vim.fn['codeium#Accept']()
             end, { expr = true })
-        end },
+        end
+    },
     {
         "jose-elias-alvarez/typescript.nvim"
     },
@@ -51,8 +83,8 @@ lvim.plugins = {
         "nacro90/numb.nvim",
         event = "BufRead",
     }, {
-        "p00f/nvim-ts-rainbow",
-    },
+    "p00f/nvim-ts-rainbow",
+},
     {
         "folke/lsp-colors.nvim",
         event = "BufRead",
@@ -81,12 +113,12 @@ lvim.plugins = {
         "windwp/nvim-ts-autotag",
 
     },
-    {
-        "tzachar/cmp-tabnine",
-        run = "./install.sh",
-        requires = "hrsh7th/nvim-cmp",
-        event = "InsertEnter",
-    },
+    -- {
+    --     "tzachar/cmp-tabnine",
+    --     run = "./install.sh",
+    --     requires = "hrsh7th/nvim-cmp",
+    --     event = "InsertEnter",
+    -- },
     {
         "rmagatti/goto-preview",
     },
