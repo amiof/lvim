@@ -51,7 +51,7 @@ mv ~/.config/lvim ~/.config/lvim_backup
 git clone https://github.com/amiof/lvim.git ~/.config/lvim
 
 ```
-2.that is better cache reset :
+2. better cache reset :
 ```
 lvim +LvimUpdate +LvimCacheReset +q
 ```
