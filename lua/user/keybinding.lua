@@ -12,6 +12,7 @@ vim.keymap.set("n", "Tz", ":tabnew %<cr>", { silent = true })
 vim.keymap.set("n", "To", ":tabclose<cr>", { silent = true })
 vim.cmd("nnoremap Q <c-v>")
 vim.keymap.set("n", "@", ":ZenMode<cr>", { silent = true })
+vim.keymap.set("n", "Tf", ":Telescope live_grep<cr>", { silent = true })
 ----bindding neoscroll to pageup and ScrollWheelUp ....
 vim.cmd(":map <ScrollWheelUp> <C-u>")
 vim.cmd(":map <ScrollWheelDown> <C-d>")
