@@ -6,7 +6,9 @@ lvim.plugins = {
     { "Wansmer/treesj" },
     { "manzeloth/live-server" },
     { "eandrju/cellular-automaton.nvim" },
+
     { "luisiacc/gruvbox-baby" },
+    {"tpope/vim-dotenv"},
     { 'uarun/vim-protobuf' },
     { "ziontee113/SelectEase" }, --select easy item and change it
     { "xiyaowong/nvim-transparent" },
@@ -17,7 +19,7 @@ lvim.plugins = {
     { "mxsdev/nvim-dap-vscode-js" },
     {
         "kevinhwang91/nvim-ufo",
-        requires = {
+        dependencies = {
             "kevinhwang91/promise-async",
             {
                 "luukvbaal/statuscol.nvim",
@@ -29,7 +31,7 @@ lvim.plugins = {
     {
         'phaazon/mind.nvim',
         branch = 'v2.2',
-        requires = { 'nvim-lua/plenary.nvim' },
+        dependencies = { 'nvim-lua/plenary.nvim' },
         config = function()
             require 'mind'.setup()
         end
@@ -44,7 +46,7 @@ lvim.plugins = {
                 -- add any options here
             })
         end,
-        requires = {
+        dependencies = {
             -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
             "MunifTanjim/nui.nvim",
             -- OPTIONAL:
