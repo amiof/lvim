@@ -7,19 +7,22 @@
 --     "rcarriga/nvim-notify",
 -- }
 
-
 require("notify").setup({
     background_colour = "#000000",
 
 })
 require("noice").setup({
-    config.lsp.hover.enabled = false,
+    default_settings = {
+        ...,
+        notification_position = "bottom",
+    },
     lsp = {
         -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
         override = {
             ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
             ["vim.lsp.util.stylize_markdown"] = true,
             ["cmp.entry.get_documentation"] = true,
+            -- ["config.lsp.hover.enabled"] = false,
         },
     },
     -- you can enable a preset for easier configuration

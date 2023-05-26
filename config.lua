@@ -9,7 +9,8 @@ lvim.builtin.alpha.dashboard.section.header.val = baner
 -- lvim.lsp.diagnostics.virtual_text = false --for show errors in line or not
 lvim.builtin.smooth_scroll = "neoscroll" -- for smoth scrolling, can be "cinnamon", "neoscroll" or ""
 lvim.lsp.code_lens_refresh = true
-reload "user.noice"
+
+-- reload "user.noice"
 reload "user.auto-save"
 reload "user.goto-preview"
 reload "user.mini-map"
@@ -52,4 +53,3 @@ reload "user.cellularAutomation"
 -- reload "user.terminal"
 reload "user.mini-sourround"
 reload "user.cmp"
-

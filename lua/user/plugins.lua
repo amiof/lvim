@@ -8,7 +8,7 @@ lvim.plugins = {
     { "eandrju/cellular-automaton.nvim" },
 
     { "luisiacc/gruvbox-baby" },
-    {"tpope/vim-dotenv"},
+    { "tpope/vim-dotenv" },
     { 'uarun/vim-protobuf' },
     { "ziontee113/SelectEase" }, --select easy item and change it
     { "xiyaowong/nvim-transparent" },
@@ -60,15 +60,15 @@ lvim.plugins = {
         { "catppuccin/nvim", as = "catppuccin" },
         event = "WinScrolled",
     },
-    {
-        'Exafunction/codeium.vim',
-        config = function()
-            -- Change '<C-g>' here to any keycode you like.
-            vim.keymap.set('i', '<C-g>', function()
-                return vim.fn['codeium#Accept']()
-            end, { expr = true })
-        end
-    },
+    -- {
+    --     'Exafunction/codeium.vim',
+    --     config = function()
+    --         -- Change '<C-g>' here to any keycode you like.
+    --         vim.keymap.set('i', '<C-g>', function()
+    --             return vim.fn['codeium#Accept']()
+    --         end, { expr = true })
+    --     end
+    -- },
     {
         "jose-elias-alvarez/typescript.nvim"
     },
